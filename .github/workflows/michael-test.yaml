@@ -4,10 +4,10 @@ jobs:
   Test-Rector-Rules:
     runs-on: ubuntu-latest
     steps:
-      - run: ./vendor/bin/rector process src/rector-testing --dry-run --debug
-      - run: ./vendor/bin/rector process src/rector-testing/SomeFile.php --dry-run --debug --config rector_FinalizeClassesWithoutChildrenRector.php
-      - run: ./vendor/bin/rector process src/rector-testing/SomeClass.php --dry-run --debug --config rector_TypedPropertyRector.php
-      - run: ./vendor/bin/rector process src/rector-testing/SymfonyRoute.php --dry-run --debug --config rector_AnnotationToAttributeRector.php
-      - run: ./vendor/bin/rector process src/rector-testing/SomeAnnotation.php --dry-run --debug --config rector_DoctrineAnnotationClassToAttributeRector.php
-      - run: ./vendor/bin/rector process src/rector-testing/SomeAnnotation2.php --dry-run --debug --config rector_DoctrineAnnotationClassToAttributeRector.php
-      - run: ./vendor/bin/phpstan analyse src/rector-testing/*
+      - run: ./vendor/rector/rector/bin/rector process src/rector-testing --dry-run --debug
+      - run: ./vendor/rector/rector/bin/rector process src/rector-testing/SomeFile.php --dry-run --debug --config rector_FinalizeClassesWithoutChildrenRector.php
+      - run: ./vendor/rector/rector/bin/rector process src/rector-testing/SomeClass.php --dry-run --debug --config rector_TypedPropertyRector.php
+      - run: ./vendor/rector/rector/bin/rector process src/rector-testing/SymfonyRoute.php --dry-run --debug --config rector_AnnotationToAttributeRector.php
+      - run: ./vendor/rector/rector/bin/rector process src/rector-testing/SomeAnnotation.php --dry-run --debug --config rector_DoctrineAnnotationClassToAttributeRector.php
+      - run: ./vendor/rector/rector/bin/rector process src/rector-testing/SomeAnnotation2.php --dry-run --debug --config rector_DoctrineAnnotationClassToAttributeRector.php
+      - run: ./vendor/rector/rector/bin/phpstan analyse src/rector-testing/*
