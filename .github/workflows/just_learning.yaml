@@ -4,4 +4,4 @@ jobs:
   Display-Dir_path:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $PWD
+      - run: echo $PATH
