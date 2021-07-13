@@ -31,3 +31,5 @@ vendor/bin/rector process src/rector-testing/SomeAnnotation.php --dry-run --debu
 
 # Doesn't work.  Unlike others, I will need to create a test fixture and add pull request.
 vendor/bin/rector process src/rector-testing/SomeAnnotation2.php --dry-run --debug --config rector_DoctrineAnnotationClassToAttributeRector.php
+
+vendor/bin/phpstan analyse src/rector-testing/*
