@@ -4,6 +4,10 @@ jobs:
   Test-Rector-Rules:
     runs-on: ubuntu-latest
     steps:
+      - run: echo '$PATH'
+      - run: echo $PATH
+      - run: echo $PWD
+      - run: echo '$PWD'
       - run: ./vendor/rector/rector/bin/rector process src/rector-testing --dry-run --debug
       - run: ./vendor/rector/rector/bin/rector process src/rector-testing/SomeFile.php --dry-run --debug --config rector_FinalizeClassesWithoutChildrenRector.php
       - run: ./vendor/rector/rector/bin/rector process src/rector-testing/SomeClass.php --dry-run --debug --config rector_TypedPropertyRector.php
