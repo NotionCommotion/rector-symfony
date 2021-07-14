@@ -6,9 +6,11 @@
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
-#/vendor/
 ###< symfony/framework-bundle ###
 
 migrations
 /.env
 
+# composer
+/vendor
+composer.lock
