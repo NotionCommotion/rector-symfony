@@ -9,7 +9,7 @@
 ###< symfony/framework-bundle ###
 
 migrations
-/.env
+
 
 # composer
 /vendor
