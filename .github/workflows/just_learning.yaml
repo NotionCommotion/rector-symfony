@@ -1,7 +1,0 @@
-name: Just testing
-on: [push]
-jobs:
-  Display-Dir_path:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo $PATH
